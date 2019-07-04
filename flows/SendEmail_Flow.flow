@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_An_Email</name>
+        <label>Send An Email</label>
+        <locationX>563</locationX>
+        <locationY>96</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>curContact.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>ps1234.soni@gmail.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Subject Flow</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <interviewLabel>SendEmail-Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SendEmail-Flow_v1</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Retrieve_a_record</name>
+        <label>Retrieve a record</label>
+        <locationX>223</locationX>
+        <locationY>238</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_An_Email</targetReference>
+        </connector>
+        <filters>
+            <field>LastName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>soni</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>curContact</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FirstName</queriedFields>
+        <queriedFields>LastName</queriedFields>
+        <queriedFields>Email</queriedFields>
+        <queriedFields>sf4twitter__Twitter_Picture__c</queriedFields>
+    </recordLookups>
+    <startElementReference>Retrieve_a_record</startElementReference>
+    <status>Draft</status>
+    <textTemplates>
+        <description>This is text template for merging in contact data.</description>
+        <name>EmailBody</name>
+        <text>Here is what we know about you.{!curContact.LastName}</text>
+    </textTemplates>
+    <variables>
+        <name>curContact</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+</Flow>

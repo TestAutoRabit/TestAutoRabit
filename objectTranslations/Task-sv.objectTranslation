@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DB Activity Type --></label>
+        <name>DB_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smart Email Id --></label>
+        <name>wbsendit__Smart_Email_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smart Email Message Id --></label>
+        <name>wbsendit__Smart_Email_Message_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smart Email Status --></label>
+        <name>wbsendit__Smart_Email_Status__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Send_Twitter_Message --></label>
+        <name>sf4twitter__Send_Twitter_Message</name>
+    </webLinks>
+</CustomObjectTranslation>

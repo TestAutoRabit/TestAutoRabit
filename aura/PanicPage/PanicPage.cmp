@@ -1,0 +1,34 @@
+<aura:component controller="SoundController" implements="force:appHostable,flexipage:availableForAllPageTypes"  access="global" description="Lightning page for raising Panic Alert">
+    <aura:attribute name="msg" type="String" default="Music Playing..." description="Attribute for music text"/>
+    <aura:attribute name="slist" type="List"/>
+    <aura:attribute name="cbanner" type="String" default="Panic Page"/>
+    <aura:attribute name="sd" type="String" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.load}"/>
+    <div style="font-size:20px;text-align:center;">
+    {!v.cbanner}
+    </div>
+    
+    <div class="slds-align--absolute-center">
+    <lightning:button variant="destructive">
+    <div class ="pstyle" onclick="{!c.playMusic}" onmouseover="{!c.showmsg}" 
+         onmouseout="{!c.hidemsg}">        
+    </div>
+    </lightning:button>        
+    </div>    
+    <audio aura:id= "atag" autoplay ="true">
+    </audio>
+    <div style="margin:40px">
+    <lightning:select name="pdata" aura:id="pdata" onchange="{!c.selectsound}" label="Select Sound" >
+        <option value="">Select MP3</option>
+        <aura:iteration items="{!v.slist}" var="s">
+          <option value="{!s.Name}">{!s.Name}</option>       
+        </aura:iteration>
+    </lightning:select>
+    </div>    
+
+    <div aura:id="dmsg" style="font-size:30px;font-style:bold;" 
+             class="slds-align--absolute-center">
+        {!v.msg}
+    </div>
+</aura:component>

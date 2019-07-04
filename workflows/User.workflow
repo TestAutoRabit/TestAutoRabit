@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <outboundMessages>
+        <fullName>Pulkit</fullName>
+        <apiVersion>29.0</apiVersion>
+        <endpointUrl>http://requestb.in/wi5ptqwi</endpointUrl>
+        <fields>Id</fields>
+        <fields>LastViewedDate</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>pulkitsoni@salesforce.com</integrationUser>
+        <name>Pulkit</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>WF1</fullName>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>User.LanguageLocaleKey</field>
+            <operation>equals</operation>
+            <value>English</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

@@ -1,0 +1,8 @@
+.THIS .pstyle {
+    margin:auto;
+    height:300px;
+    width:300px;
+    background:url(/resource/panic);
+    background-repeat:no-repeat;
+    background-position:center;
+}

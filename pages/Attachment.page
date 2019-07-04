@@ -1,0 +1,12 @@
+<apex:page controller="CS_AttachmentController">
+<apex:form >
+<apex:pageBlock title="Total Attachments uploaded today = {!count}">
+<apex:pageblockTable value="{!attach}" var="attach1">
+<apex:column value="{!attach1.Id}" title="ID" headerValue="ID"/>
+<apex:column value="{!attach1.name}" title="Name" headerValue="Name"/>
+<apex:column value="{!attach1.Createddate}" title="Createddate" headerValue="CreatedDate"/>
+<apex:column value="{!attach1.Ownerid}" title="Owner" headerValue="Owner"/>
+</apex:pageblockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

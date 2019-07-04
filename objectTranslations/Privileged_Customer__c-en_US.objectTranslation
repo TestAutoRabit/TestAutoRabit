@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Privileged Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PCusts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Discount Value --></label>
+        <name>Discount_Value__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70</masterLabel>
+            <translation><!-- 70 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount types --></label>
+        <name>Discount_types__c</name>
+        <picklistValues>
+            <masterLabel>Bumper-25</masterLabel>
+            <translation><!-- Bumper-25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C2C-Free</masterLabel>
+            <translation><!-- C2C-Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold-50</masterLabel>
+            <translation><!-- Gold-50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Night out-100</masterLabel>
+            <translation><!-- Night out-100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top UP-10</masterLabel>
+            <translation><!-- Top UP-10 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Privileged Customer Rebate --></label>
+        <name>Rebate__c</name>
+        <relationshipLabel><!-- PCusts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Top Up discount --></label>
+        <name>Top_Up_discount__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

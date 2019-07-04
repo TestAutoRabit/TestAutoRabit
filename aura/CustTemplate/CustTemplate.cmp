@@ -1,0 +1,39 @@
+<aura:component implements="lightning:recordHomeTemplate" description="3 column template, not optimised for Mobile Devices yet">
+    <!-- Setup/Attributes -->
+    <aura:attribute name="top" type="Aura.Component[]" />
+    <aura:attribute name="left" type="Aura.Component[]" />
+    <aura:attribute name="middle" type="Aura.Component[]" />
+    <aura:attribute name="right" type="Aura.Component[]" />
+    <aura:attribute name="lsize" type="String" default="3"/> <!-- Default width of left column -->
+    <aura:attribute name="rsize" type="String" default="3"/> <!-- Default width of right column -->
+    <aura:attribute name="show" type="string" default="true" />
+    
+    <!-- Layout -->
+    <div>
+        <!-- Header -->
+        <div>
+            <lightning:layout >                
+                <lightning:layoutItem flexibility="grow" class="slds-m-around--xx-small">
+                    {!v.top}
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        <!-- Main Body -->
+        <div>
+            <lightning:layout horizontalAlign="spread">      
+                <!-- First Column -->
+                <lightning:layoutItem size="{!v.lsize}" class="slds-m-horizontal--xx-small">
+                    {!v.left}
+                </lightning:layoutItem>          
+                <!-- Second Column -->
+                <lightning:layoutItem flexibility="grow" class="slds-m-horizontal--xx-small">
+                    {!v.middle}
+                </lightning:layoutItem>   
+                <!-- third Column -->          
+                <lightning:layoutItem size="{!v.rsize}" class="slds-m-horizontal--xx-small">
+                    {!v.right}
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,39 @@
+<apex:page sidebar="false" cache="false" showChat="false" tabStyle="Privileged_Customer__c" title="CUSTOMISED VF PAGE" 
+applyBodyTag="Tiger" standardController="Account">
+<apex:pageBlock title="LA LIVRE">
+<apex:pageBlockSection title="Title of your book">
+{!$User.Username}
+<p>Todays date is {!TODAY()} </p>
+ </apex:pageBlockSection>
+ <apex:pageBlockSection title="Author of the book">
+ You are viewing the {!Account.name}
+ <apex:dataList value="{!account.contacts}" var="item">
+<apex:outputText value="{!item.name}"/>
+</apex:dataList>
+<ul>
+<apex:repeat value="{!account.contacts}" var="item">
+<li><apex:outputText value="{!item.name}"/></li>
+</apex:repeat>
+</ul>
+ </apex:pageBlockSection>
+  <apex:pageBlockSection title="ISBN">
+ <p> Book is issued till {!DAY(TODAY() + 7)}/{!MONTH(TODAY() + 7)}/{!Year(TODAY() + 7)}</p>
+ <apex:outputField value="{!account.Owner.Name}"/>
+ </apex:pageBlockSection>
+ <apex:pageBlockSection title="Science and Fiction">
+ <apex:outputField value="{!account.name}"/>
+  </apex:pageBlockSection>
+  <apex:pageBlockTable value="{!account.contacts}" var="item" cellPadding="8" border="1">
+     <apex:column >
+  <apex:facet name="The book">
+The Book
+</apex:facet>
+</apex:column>
+  <apex:column value="{!item.name}"/>
+  </apex:pageBlockTable>
+  <apex:outputLink value="http://developer.force.com/">Force!</apex:outputLink>
+  <apex:outputLink value="{! URLFOR($Action.Account.new)}" onmousedown="YYYYY">Create New Account</apex:outputLink>
+</apex:pageBlock>
+  <!-- Begin Default Content REMOVE THIS -->
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

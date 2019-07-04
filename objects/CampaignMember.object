@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>City</fullName>
+    </fields>
+    <fields>
+        <fullName>CompanyOrAccount</fullName>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstName</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstRespondedDate</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+    </fields>
+    <fields>
+        <fullName>HasResponded</fullName>
+    </fields>
+    <fields>
+        <fullName>LastName</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>PostalCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Salutation</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Street</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+    </fields>
+    <fields>
+        <fullName>wbsendit__Activity_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of the last Campaign Monitor activity.</inlineHelpText>
+        <label>Activity Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>wbsendit__Activity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last Campaign Monitor activity type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Last Campaign Monitor activity type.</inlineHelpText>
+        <label>Activity</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bounced</fullName>
+                    <default>false</default>
+                    <label>Bounced</label>
+                </value>
+                <value>
+                    <fullName>Clicked</fullName>
+                    <default>false</default>
+                    <label>Clicked</label>
+                </value>
+                <value>
+                    <fullName>Opened</fullName>
+                    <default>false</default>
+                    <label>Opened</label>
+                </value>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>Unsubscribed</fullName>
+                    <default>false</default>
+                    <label>Unsubscribed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>wbsendit__Clicks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows number of times the subscriber clicked links from this email campaign.</inlineHelpText>
+        <label>Clicks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>wbsendit__Opens__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows number of times the subscriber opened this email campaign.</inlineHelpText>
+        <label>Opens</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <sharingModel>ControlledByCampaign</sharingModel>
+    <webLinks>
+        <fullName>sf4twitter__Send_Twitter_Message</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Message To Members</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var records = {!GETRECORDIDS( $ObjectType.CampaignMember)}; 
+
+function dataNav(showDataBrowser) {
+	dataBrowser = &apos;&apos;;
+	for(var i in navigator) {
+		dataBrowser += &quot;navigator.&quot; + i + &quot;\t\t=\t&quot; + eval(&quot;navigator.&quot; + i)+ &quot;\n&quot;;
+	}
+	return (showDataBrowser) ? dataBrowser : {&apos;name&apos; : navigator.appName, &apos;version&apos; : navigator.appVersion, &apos;userAgent&apos; : 	navigator.userAgent};
+}
+
+function openPopup(records) {
+    var popupHeight = 386;
+    var popupWidth = 500;
+    
+	var popupLeft = ( screen.width - popupWidth  ) / 2;
+	var popupTop = ( screen.height - popupHeight ) / 2;
+
+    var popupSpecs =
+        &apos;width=&apos;+ popupWidth + &apos;,&apos; +
+        &apos;height=&apos; + popupHeight + &apos;,&apos; +
+        &apos;left=&apos; + popupLeft + &apos;,&apos; +
+        &apos;top=&apos; + popupTop+ &apos;,&apos; +
+        &apos;toolbar=no,&apos; +
+        &apos;titlebar=no,&apos; +
+        &apos;location=no,&apos; +
+        &apos;directories=no,&apos; +
+        &apos;status=no,&apos; +
+        &apos;menubar=no,&apos; +
+        &apos;scrollbars=yes,&apos; +
+        &apos;copyhistory=yes,&apos; +
+        &apos;resizable=yes&apos;;
+    window.open(
+        &apos;/apex/sf4twitter__TwitterMessage?id={!Campaign.Id}&amp;records=&apos; + records +  &apos;&amp;retURL=&apos;+encodeURIComponent(window.location),
+        &apos;_blank&apos;,
+       popupSpecs);
+}
+
+if(dataNav()[&apos;name&apos;] == &apos;Microsoft Internet Explorer&apos;){
+	if(records.length &gt; 50){
+		alert(&apos;Your browser does not support that many records, please select up to 50 records.&apos;);
+	}
+	else {
+		if (records[0] == null ) { 
+			alert(&quot;Please select at least one record.&quot;) ;
+		} 
+		else {  
+			if (records.length &gt; 10) { 
+				alert(&quot;Please select no more than ten records.&quot;) ;
+			} 
+			else {  
+				openPopup(records);
+			}
+		}
+	}
+}
+else {
+	if (records[0] == null) { 
+		alert(&quot;Please select at least one record.&quot;) ;
+	} 
+	else {  
+		if (records.length &gt; 10) { 
+			alert(&quot;Please select no more than ten records.&quot;) ;
+		}
+		else {  
+			 openPopup(records);
+		}
+	}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>wbsendit__Send_to_Email_List</fullName>
+        <availability>online</availability>
+        <description>Send members to email list.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Add Members to Subscriber List</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!$Site.Prefix}/apex/{!$Setup.wbsendit__senditsettings__c.wbsendit__Namespace__c}AddMembersToList?Id={!Campaign.Id}&amp;retURL={!Campaign.Id}</url>
+    </webLinks>
+</CustomObject>

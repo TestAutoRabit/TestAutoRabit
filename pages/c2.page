@@ -1,0 +1,17 @@
+<apex:page controller="c2">
+<apex:form >
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:inputText label="Test" value="{!Keywords}"/>
+  <apex:commandButton value="Test" action="{!search}"/>
+  <apex:pageBlock >
+  <apex:pageBlockTable value="{!Acts}" var="acc">
+  <apex:column id="Test">
+   <apex:outputText value="{!acc.name}"/>
+  </apex:column>
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+  <h1>Congratulations</h1>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+  </apex:form>
+</apex:page>

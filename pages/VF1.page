@@ -1,0 +1,14 @@
+<apex:page >
+<apex:panelGrid columns="3" id="theGrid">
+<apex:outputText value="First" id="theFirst"/>
+<apex:outputText value="Second" id="theSecond"/>
+<apex:outputText value="Third" id="theThird"/>
+<apex:panelGroup >
+<apex:outputText value="Collateral" id="coll"/>
+</apex:panelGroup>
+</apex:panelGrid>
+<apex:relatedList list="Opportunities"/>
+
+<topics:widget entity="0D5x00000009Fhc"
+customUrl="http://mywebsite/TopicViewTestPage?topicId="/>
+</apex:page>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Users</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Usage --></label>
+        <name>API_Usage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badges --></label>
+        <name>Badges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certification URL --></label>
+        <name>Certification_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certifications --></label>
+        <name>Certifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook --></label>
+        <name>Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Linkedin --></label>
+        <name>Linkedin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Points --></label>
+        <name>Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile URL --></label>
+        <name>Profile_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rank --></label>
+        <name>Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trailblazer ID --></label>
+        <name>Trailblazer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trailhead URL --></label>
+        <name>Trailhead_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Twitter --></label>
+        <name>Twitter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Description --></label>
+        <name>Website_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Logo URL --></label>
+        <name>Website_Logo_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Name --></label>
+        <name>Website_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website URL --></label>
+        <name>Website_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Refresh_Now --></label>
+        <name>Refresh_Now</name>
+    </webLinks>
+</CustomObjectTranslation>

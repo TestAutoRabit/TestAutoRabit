@@ -1,0 +1,5 @@
+<apex:page standardController="Account">
+
+    ... page content here ...
+
+</apex:page>

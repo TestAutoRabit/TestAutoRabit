@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>Panic page for mobile app</aura:description>
+	<aura:example name="PanicPage" ref="c:PanicPage" label="Panic Page Component">
+		Mobile Page for Case study
+	</aura:example>
+</aura:documentation>

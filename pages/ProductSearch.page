@@ -1,0 +1,67 @@
+<apex:page controller="ProductCatalogue">
+<apex:form >
+<apex:pageblock >
+
+    <apex:pageBlockButtons location="both">
+    <apex:commandButton value="Search" action="{!searchProducts}" rerender="prodTable"/>
+    <apex:commandButton value="Add to Cart" action="{!AddtoCart}" rerender="prodTable"/>
+    </apex:pageBlockButtons>  
+      
+<apex:pageBlockSection id="prodTable" columns="1">
+   
+    <div align="center">
+    <apex:pageblockSectionItem >
+    <apex:outputLabel value="Name"/>
+    <apex:inputText value="{!name}"/>
+    </apex:pageblockSectionItem>
+    </div> 
+ <!--   <apex:pageblockSectionItem>
+    <apex:outputLabel value="Product Description"/>
+    <apex:inputText value="{!Description}"/>
+    </apex:pageblockSectionItem>
+ -->
+
+ <apex:pageBlockTable value="{!prodRec}" var="c" id="prodTable">{!prodRec}
+                    <apex:column >
+                        <apex:facet name="header">Name </apex:facet>
+                            {!c.Name}
+                       
+                    </apex:column>
+
+                    <apex:column >
+                        <apex:facet name="header">Description </apex:facet>
+                            {!c.Description}
+                       
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">Product Code</apex:facet>
+                            {!c.ProductCode}
+                       
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">Quantity Unit</apex:facet>
+                            {!c.QuantityUnitOfMeasure}
+                       
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">Is Active</apex:facet>
+                        <apex:inputCheckbox value="{!c.IsActive}"/>
+                       
+                    </apex:column>    
+                    <apex:column >
+                        <apex:facet name="header"> 
+                        <c:checkallornone />
+                        </apex:facet>  
+                        <apex:inputcheckbox value="{!choosenProduct}" id="AddtoCart" />
+                    </apex:column>                                                                              
+</apex:pageBlockTable>    
+    
+</apex:pageBlockSection>    
+</apex:pageblock>
+</apex:form>
+
+
+</apex:page>

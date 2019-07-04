@@ -1,0 +1,87 @@
+<apex:page >
+<style>
+
+form div.required label.control-label:after {
+  content:" * ";
+  color:red;
+}
+
+</style>
+ <apex:form >
+        <apex:pageBlock >
+        <div class = "requiredInput">
+        <div class = "requiredBlock"></div>
+
+       <apex:inputText label="hello" />
+        </div>
+        </apex:pageBlock>
+        
+<apex:outputPanel style="Border:Solid 1px; margin-bottom: 30px" layout="block">
+         <apex:panelGrid columns="2">
+         <h2>hi</h2>
+         <apex:outputPanel layout="block" rendered="true">
+         <button class="button button--primary push--right" disabled ="true" rendered="true" title="NeMO_KYC_Unavailable" alt="thistooltip" style="float: right;margin-top: -28px;">Validate KYC</button >
+         </apex:outputPanel> 
+         <apex:outputPanel layout="block" rendered="false">
+         <button class="button button--primary push--right"  style="float: right;margin-top: -28px;">Validate KYC</button >
+         </apex:outputPanel> 
+         </apex:panelGrid>
+          </apex:outputPanel> 
+          
+           <apex:outputPanel id="PopupWindow" rendered="true" onclick="window.close();">           
+                <apex:pageMessages ></apex:pageMessages> 
+                <apex:outputPanel styleClass="popupBackgroundTrasfer" layout="block"  id="popupPanel"> 
+                    <apex:outputPanel styleClass="custPopupTrasfer panel panel--single" layout="block" rendered="true">
+                    <apex:outputPanel layout="block" styleClass="grid push--sides">
+                        <apex:outputPanel styleClass="grid__item desk-one-tenths" layout="block">
+                            <h2 class="textalign--center" style="font-weight:bold;">NeMO_KYC_Successful</h2>                        
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                      </apex:outputPanel>
+                </apex:outputPanel>
+            </apex:outputPanel>  
+            
+    <style>
+            /* Pop up Style */
+                .popupBackgroundTrasfer{
+                    width:100%; 
+                    height:150%;
+                    position: absolute;
+                    top: 0%;
+                    background-color: #cccccc;
+                    left: 0;
+                    opacity: .95;z-index: 9;
+                }
+                .custPopupTrasfer{
+                    position: Fixed; 
+                    background-color: #ffffff;
+                    height: 200px; 
+                    text-align: center; 
+                    top: 40%; 
+                    left: 25%; 
+                    width: 50%;
+                }
+      </style>                      
+      
+</apex:form>
+      <!--cr78-->
+     <apex:outputPanel style="Border:Solid 1px; margin-bottom: 30px" layout="block" styleClass="panel__wrapper panel__section panel__header panel__footer proposal_subline_notes">              
+                  <div align="center">
+                      <apex:outputText style="font-style:bold;color:red;size=30;align:center"  value="The maximum number of attempts allowed for automatic KYC verification has been exceeded. Please upload KYC documents for manual validation as per guidelines published on NCC"></apex:outputText>
+                  </div>                        
+    </apex:outputPanel>                      
+     <!--cr78-->  
+                        
+           <apex:outputPanel id="PopupWindow" rendered="true" onclick="window.close();">           
+                <apex:pageMessages ></apex:pageMessages> 
+                <apex:outputPanel styleClass="popupBackgroundTrasfer" layout="block"  id="popupPanel"> 
+                    <apex:outputPanel styleClass="custPopupTrasfer panel panel--single" layout="block" rendered="true">
+                    <apex:outputPanel layout="block" styleClass="grid push--sides">
+                        <apex:outputPanel styleClass="grid__item desk-one-tenths" layout="block">
+                            <h2 class="textalign--center" style="font-weight:bold;">NeMO_KYC_Successful</h2>                        
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+                      </apex:outputPanel>
+                </apex:outputPanel>
+            </apex:outputPanel>          
+</apex:page>

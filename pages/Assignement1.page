@@ -1,0 +1,95 @@
+<apex:page >
+<style>
+#header {
+    background-color:#eeeeee;
+    color:white;
+    text-align:left;
+    padding:10px;
+    height:10px;
+    width:300px;
+    float:left;
+}
+#header2 {
+    background-color:#eeeeee;
+    color:white;
+    text-align:left;
+    padding:10px;
+    height:10px;
+    width:650px;
+}
+#header3 {
+    background-color:blue;
+    color:white;
+    text-align:right;
+    float:left;
+    padding:10px;
+    height:10px;
+    width:350px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:200px;
+    width:700px;
+    float:left;
+    padding:5px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>
+
+ <apex:form >
+
+    <table style = "width 100%">
+    <td>
+    <tr bgcolor="#eeeeee">
+       <!--<div id = "header">
+       </div>-->
+    <!--   <div id = "header2">
+       </div> -->
+      </tr>
+    </td>
+     
+     <td>  
+      <tr>       
+       <div style = "background-color:white; color:black; padding:10px;">
+       </div>
+       <div style = "background-color:#eeeeee; color:white; padding:100px;">
+       </div>
+      </tr>
+      <tr>
+       <div style = "background-color:white; color:white; padding:10px;">
+       </div>
+      </tr>
+      </td>
+      <td>
+      <tr>
+        <div style= "line-height:30px;background-color:#eeeeee; height:158px; width:300px; float:left; padding:20px;">
+        </div>
+        <div style= "line-height:30px;background-color:white; height:158px; width:1.5px; float:left; padding:20px;">
+        </div>
+        <div style = "background-color:#eeeeee; color:white; padding:100px;">
+        </div>
+      </tr>
+      </td>
+      <td>
+      <tr>
+       <div style = "background-color:white; color:white; padding:10px;">
+        </div>
+        <div id = "nav">
+        </div> 
+        <div style= "line-height:30px;background-color:white; height:200px; width:1.5px; float:left; padding:20px;">
+        </div>
+        <div style = "background-color:#eeeeee; color:white; padding:120px;">
+        </div>
+      </tr>
+      </td>
+    </table>
+
+ </apex:form>
+</apex:page>

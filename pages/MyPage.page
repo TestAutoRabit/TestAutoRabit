@@ -1,0 +1,14 @@
+<apex:page controller="pulkit" >
+     <apex:pageBlock title="List of Cases">
+         <apex:pageBlockTable value="{!c1}" var="c">
+             <apex:column value="{!c.Status}"/>
+             <apex:column value="{!c.CaseNumber}"/>
+          </apex:pageBlockTable>
+          <apex:pageBlockTable value="{!c2}" var="d">
+          <apex:column value="{!d.Name}"/>
+          </apex:pageBlockTable>
+    <h1> This is the List of Cases  </h1>      
+         
+      </apex:pageBlock>
+
+</apex:page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ps1234.soni@gmail.com</contactEmail>
+    <label>PulkitAcc</label>
+    <oauthConfig>
+        <callbackUrl>https://lightningaware-dev-ed.my.salesforce.com/services/oauth2/callback</callbackUrl>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+        <scopes>Eclair</scopes>
+    </oauthConfig>
+</ConnectedApp>

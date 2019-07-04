@@ -1,0 +1,32 @@
+<apex:page controller="MyController">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection id="pageBS" columns="1" rendered="true" >
+  <center>
+  <apex:inputField id="Acc" value="{!account.name}"/>
+  </center>
+    <!-- Page: -->
+
+        <apex:selectCheckboxes value="{!countries}" title="Choose a country">
+            <apex:selectOptions value="{!items}"/>
+        </apex:selectCheckboxes><br/>
+        <apex:commandButton value="Test" action="{!test}" rerender="out" status="status"/>
+    
+    <apex:outputPanel id="out">
+        <apex:actionstatus id="status" startText="Calculating....">
+            <apex:facet name="stop">
+                <apex:outputPanel >
+                    <p>You have selected:</p>
+                    <apex:dataList value="{!countries}" var="c">Country Name:{!c}</apex:dataList>
+                </apex:outputPanel>
+            </apex:facet>
+        </apex:actionstatus>
+    </apex:outputPanel>
+
+ 
+  <!-- End Default Content REMOVE THIS -->
+  <apex:commandButton action="{!save}" value="Save New Account Name"/>
+</apex:pageBlockSection>  
+</apex:pageBlock>
+</apex:form>
+</apex:page>

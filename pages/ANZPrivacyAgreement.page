@@ -1,0 +1,167 @@
+<apex:page docType="html-5.0">
+<apex:form id="homeID">
+<style>
+body {background-color: black;}
+h1   {color: white;font-size:18px}
+h2   {color: white;font-size:16px}
+h3   {color: white;font-size:12px}
+h4   {color: white;}
+p    {color: white;font-size:13px}
+div  {text-align:left;padding-right: 20px;padding-left: 20px}
+title    {color: white;}
+</style>
+<div style=" text-align:center;">
+<apex:image url="{!$Resource.ANZBankLogo}" width="75" height="75"/>
+</div>
+<div style=" text-align:center; letter-spacing:7px; text-transform:uppercase;">
+<h1>
+ANZ Privacy Agreement
+</h1>
+</div>
+<div style="text-align:center;">
+<h1>
+Applicant and Candidate Privacy Statement
+</h1>
+<p>
+This document explains the approach adopted by the Australian and New Zealand Banking Group Ltd ABN 11 005 357 522 ('the Group'), all its related companies, and any third parties that support processes involving the collection and handling of your personal information. At ANZ we abide by the privacy laws in the countries in which we operate. The privacy laws in these countries affect how we collect and use any personal information you provide about yourself and your referees. We may collect and administer information about you because we are required or authorised by law. If the information you provide is directly related to your current or former employment with the Group, the Group is exempt from the Australian Privacy Act (privacy obligations in other jurisdictions may still apply), but we will always maintain our commitment to protecting your privacy.
+</p>
+<h2> 
+ANZ and your privacy
+</h2>
+<div style="text-align:left;">
+<h4> 
+This website is maintained by Oracle Corporation under an agreement with the Group or its related companies. The website facilitates our candidate application process by collecting and passing the information you provide through this website to the Group, its related parties and third parties who assist in the evaluation of candidates.
+<div style="text-align:left;">
+What personal information do we collect and hold?
+</div>
+</h4> 
+</div>
+
+<div style="text-align:left;">
+<h4>
+We will collect and retain the following types of information about you:
+<ul>
+<li>information to identify you such as your full name, title, date of birth and nationality</li>
+<li>your contact details including telephone number(s), postal and email addresses</li>
+<li>your resume, work history and references from your previous employer(s);</li>
+<li>details of your professional activities and interests;</li>
+<li>details of your education, qualifications and references from your institutions of study;</li>
+<li>your interests and extra-curricular activities;</li>
+<li>information you have publicly shared on social media (such as LinkedIn); and</li>
+<li>other information needed to evaluate your suitability for a position including information which you provide through this website.</li>
+</ul>
+We may also collect special categories of data such as
+<ul>
+<li>information about your cultural or ethnic origin (optional) to monitor the bank's compliance with equal opportunities legislation;</li>
+<li>information concerning your health and medical conditions (for example, where required to make reasonable adjustments to your working conditions or environment); and</li>
+<li>information about criminal convictions (for example, where this is necessary for due diligence purposes, compliance with our regulatory obligations or employment law).</li>
+</ul>
+</h4>
+</div>
+<div>
+<h4> 
+How we collect your personal information?
+<br></br>
+We collect and retain your personal information in a number of ways, for example
+<ul>
+<li>when you provide your personal data via application forms, resumes and covering letters, update your profile through this website, speak via telephone or use video recorded interviews etc.;</li>
+<li>from third parties, for example your previous or current employers, in order to verify details about you and/or your application to work for us; and</li>
+<li>in various other ways you interact with us during the recruitment process.</li>
+<li>We also proactively look for great talent to become part of our team through referrals and by using career profiles and contact information on publicly available websites like 'LinkedIn'.</li>
+</ul>
+</h4>
+<h4>
+How we use your personal information
+</h4>
+<h4> 
+The purposes for which we will use personal data we collect in connection with your potential employment or other engagements with us include:
+</h4>
+<h4>
+<ul>
+<li> administering your job application, including assessing your suitability for the role, and where relevant, offering you a job with us; </li>
+<li> ensuring compliance with our legal and regulatory obligations by carrying out due diligence checks on you, including checking references in relation to your education and your employment history;</li>
+</ul>
+</h4> 
+<h4>
+<br></br>
+The Group or authorised third parties may share your personal information to assess your suitability as an employee or contractor.
+Where your personal information is shared with non-Group entities, we will seek to ensure that the information is held, used or disclosed consistently with the applicable privacy laws and codes.
+We may retain your information to assess your potential suitability for future job opportunities. We may contact you from time to time about opportunities. You can advise us if you no longer wish to be contacted.
+<br></br>
+Disclosure of your personal information
+ 
+The Group may need to disclose your information, including information we receive through the recruitment process, to organisations which may be located overseas. The most common reason for disclosure is because we use service providers to perform and/or support some functions on our behalf, and some of these service providers are located overseas. We only disclose your information to these organisations when it is necessary for the services they provide the Group. Services include but are not limited to:
+<ul>
+<li>Managing the application and applicant's interaction with the Group</li>
+<li>Verifying an applicant’s background and/or qualification based on information supplied</li>
+<li>Assessing an applicant’s competency and/or interviewing an applicant.</li>
+</ul>
+<br></br>
+These provided services include related entities within the Group, performing a range of technology, operational and human resource activities. These related entities are located in the following countries:
+<ul>
+<li>Australia</li>
+<li>Philippines</li>
+<li>China</li>
+<li>India</li>
+<li>Fiji</li>
+<li>New Zealand</li>
+</ul>
+<br></br>
+<h3>
+The Group may also use other offshore service providers to help with our recruitment or candidate sourcing. For example, certain positions require psychometric assessment and the Group may use a third party to complete the task with your consent. The Group uses external service providers based in the USA, Asia, and Europe to help us manage your application and we will therefore need to send your information to an administrator with processing and/or data storage facilities in these locations.
+<br></br> 
+The above is not a complete list of the countries to which your information may be disclosed when applying for a role. It may require the Group to disclose your information overseas and the countries to which we may disclose your information will depend on the particular circumstances but will still relate to the purpose of assessing your application.
+<br></br> 
+When doing so we will comply with applicable data privacy requirements and take appropriate safeguards to ensure the security and integrity of your personal data.
+<br></br> 
+Taking care of your personal information
+<br></br> 
+We store information in different ways, including in paper and electronic form. The security of your personal information is important to us and we take reasonable steps to protect it from misuse, interference and loss, and from unauthorised access, modification or disclosure.
+<br></br> 
+How long do we store your personal information
+<br></br> 
+Your personal data will be deleted when it is no longer reasonably required for the purposes described above, or you withdraw your consent (where applicable) and we are not legally required or otherwise permitted to continue storing such data as per retention requirements of your location.
+<br></br> 
+Correcting and accessing your personal information
+<br></br> 
+We encourage you to help us keep your personal information accurate, complete and current by updating your profile via the 'applicant login page'.
+<br></br> 
+Contact us if you think there is something wrong with the information we hold about you and we’ll try to correct it. We’ll try and help where we can and if we can’t we will let you know in writing.
+<br></br> 
+You have a right to request access to the information the Group holds about you, to seek correction or deletion of your information, and to lodge a complaint if you have concerns about how the Group has managed your information. If you have any questions or would like to exercise any rights under applicable privacy laws in the countries in which we operate, please contact us using the following email address: anzgrs@anz.com
+<br></br> 
+Your personal information and privacy
+<br></br> 
+This statement applies to all applicants for an employment or contract position, referees, and potential candidates the Group has contacted and applies to current employees and contractors.
+By clicking 'I Accept' on the Privacy Statement you provide consent for the Group to collect and use your personal information in accordance with the guidance provided in this Privacy Agreement.
+<br></br> 
+What if you don’t want to provide us with your personal information?
+<br></br> 
+You may choose not to provide your personal information to the Group by selecting 'I decline'. If we cannot obtain the personal information we need we may be unable to progress or administer your application or contact you if a suitable opportunity is identified in the future.
+</h3>
+</h4>
+</div>
+
+</div>
+<br></br>
+<div>
+<h3>
+Please select the country/region you belong to:
+<br></br>
+<apex:inputCheckbox label="China"/> China 
+<br></br>
+<apex:inputCheckbox label="ANZ"/> ANZ 
+<br></br>
+<apex:inputCheckbox label="Hongkong"/> HongKong
+<br></br>
+<apex:inputCheckbox label="Indonesia"/> Indonesia
+</h3>
+</div>
+<div style="text-align:center;">
+<apex:commandButton title="Accept" value="Accept"/>
+<apex:commandButton title="Decline" value="I Decline"/>
+<apex:commandButton title="Download as PDF" value="Download as PDF"/>
+</div>
+
+</apex:form>
+</apex:page>
